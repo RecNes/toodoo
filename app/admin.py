@@ -6,4 +6,4 @@ from app.models import ToDo
 
 @register(ToDo)
 class ToDoAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('pk', 'note', 'added_at', 'done_at')
