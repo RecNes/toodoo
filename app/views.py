@@ -29,6 +29,12 @@ class ToDoApp(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    def put(self, request, pk):
+        todo = ToDo.objects.get(pk=pk)
+        todo.done = True
+        todo.save()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
     def delete(self, request, pk):
         todo = ToDo.objects.get(pk=pk)
         todo.delete()
