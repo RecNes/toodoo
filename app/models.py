@@ -1,5 +1,4 @@
 # code: utf-8
-from django.contrib.auth.models import User
 from django.db import models
 from django.db.models.signals import pre_delete
 from django.dispatch import receiver
@@ -31,7 +30,6 @@ class ToDo(models.Model):
     """
     To do record model
     """
-    user = models.ForeignKey(User, related_name="todo", on_delete=models.CASCADE)
     note = models.TextField(verbose_name=u"ToDo")
     added_at = models.DateTimeField(verbose_name=u"Added At", auto_now_add=True)
     done = models.BooleanField(verbose_name=u"Done")
