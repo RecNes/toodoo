@@ -153,3 +153,11 @@ STATICFILES_DIRS = (
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
 
 STATIC_URL = '/static/'
+
+# Rest Settings
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [],
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+}
