@@ -102,3 +102,13 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# Manually added by developer
+
+.idea/
+activate
+secrets.txt
+migrations/
+logs/
+static_files/
