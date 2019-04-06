@@ -46,7 +46,7 @@ function listTodos(todos) {
                     delete_button + "</td></tr>");
             } else {
                 $(".done-list>tbody").append("<tr><td>" + todo.note + "</td><td>" +
-                    added_at + "</td><td>" + todo.done_at + "</td><td>" +
+                    added_at + "</td><td>" + done_at + "</td><td>" +
                     delete_button + "</td></tr>");
             }
         }
@@ -100,7 +100,7 @@ function doneTodo(pk) {
 
     $.ajax(
         {
-            "url": URL + pk,
+            "url": URL + pk + "/",
             "type": "PUT",
             "success": done_success,
             "error": done_error
@@ -110,11 +110,11 @@ function doneTodo(pk) {
 
 function done_success() {
     getTodos();
-    alert("Todo Deleted");
+    alert("Todo Done");
 }
 
 function done_error() {
-    alert("Todo Unable to Delete!");
+    alert("Todo Unable to set Done!");
 }
 
 
