@@ -11,7 +11,7 @@ Django based Simple to do app.
 - REST Framework
 - Jquery
 - Bootstrap
-
+- HTML
 
 ###### Author: Sencer Hamarat
 ###### Created At: 06/04/2019
