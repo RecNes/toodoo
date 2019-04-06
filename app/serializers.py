@@ -10,7 +10,7 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['user_name', ]
 
 
-class BirdNameSerializer(serializers.ModelSerializer):
+class ToDoSerializer(serializers.ModelSerializer):
 
     user_name = UserSerializer(many=False)
 
