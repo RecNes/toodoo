@@ -9,6 +9,14 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+__author__ = "Sencer Hamarat"
+__copyright__ = "Copyright 2019, The TooDoo Project"
+__license__ = "GPL V3"
+__version__ = "1.0"
+__maintainer__ = "Sencer Hamarat"
+__email__ = "sencerhamarat@gmail.com"
+__status__ = "Production"
+
 import json
 import os
 
