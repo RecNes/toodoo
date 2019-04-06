@@ -22,12 +22,13 @@ from .logging_settings import LOGGING, BASE_DIR
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-
 with open('secrets.txt', 'r') as f:
     SECRETS = json.load(f)[0]
 
 LOGGING = LOGGING
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = SECRETS['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
