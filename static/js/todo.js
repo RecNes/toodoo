@@ -37,8 +37,8 @@ function listTodos(todos) {
         function (idx, todo) {
             let added_at = moment(todo.added_at).format('L') + " " + moment(todo.added_at).format('LT');
             let done_at = moment(todo.done_at).format('L') + " " + moment(todo.done_at).format('LT');
-            let done_button = "<button onclick='doneTodo(" + todo.pk + ")'>Done</button>";
-            let delete_button = "<button onclick='deleteTodo(" + todo.pk + ")'>Delete</button>";
+            let done_button = "<button class=\"btn btn-success\"  onclick='doneTodo(" + todo.pk + ")'>Done</button>";
+            let delete_button = "<button class=\"btn btn-danger\" onclick='deleteTodo(" + todo.pk + ")'>Delete</button>";
 
             if (todo.done === false) {
                 $(".todo-list>tbody").append("<tr><td>" + todo.note + "</td><td>" +
