@@ -13,5 +13,9 @@ Django based Simple to do app.
 - Bootstrap
 - HTML
 
+### Screen Image:
+
+![screen shot](http://github.com/RecNes/toodoo/blob/master/media/screenshot.png)
+
 ###### Author: Sencer Hamarat
 ###### Created At: 06/04/2019
