@@ -1,5 +1,6 @@
 # code: utf-8
 from django.db import models
+from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.utils import timezone
 
@@ -14,7 +15,7 @@ class ToDo(models.Model):
     done_at = models.DateTimeField(verbose_name=u"Done At", auto_now_add=True)
 
     def __unicode__(self):
-        return u"Todo note of {} user (ID={})".format(self.user.username, self.pk)
+        return u"Todo note ID={}".format(self.pk)
 
     class Meta:
         verbose_name = u"Todo"
