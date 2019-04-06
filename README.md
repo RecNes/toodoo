@@ -3,9 +3,13 @@ Django based Simple to do app.
 
 ### Technologies Behind:
 
+- Python 3
+- Virtual Environment
+- Pip
 - Django
-- REST
-- Ajax
+- Postgresql
+- REST Framework
+- Jquery
 - Bootstrap
 
 
