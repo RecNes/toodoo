@@ -13,7 +13,7 @@ Django based Simple to do app.
 - Bootstrap
 - HTML
 
-### Screen Image:
+### Screen Shot:
 
 ![screen shot](https://github.com/RecNes/toodoo/blob/master/media/screenshot.png)
 
