@@ -17,7 +17,7 @@ class ToDoApp(APIView):
     To Do REST APIView
     """
 
-    def get(self):
+    def get(self, request):
         todo_lists = ToDo.objects.all()
         serializer = ToDoSerializer(todo_lists, many=True)
         return Response(serializer.data)
@@ -25,7 +25,7 @@ class ToDoApp(APIView):
     def post(self, request):
         serializer = ToDoSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save(owner=request.user)
+            serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
