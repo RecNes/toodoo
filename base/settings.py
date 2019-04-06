@@ -90,9 +90,6 @@ DATABASES = {
         'NAME': SECRETS['DBNAME'],
         'USER': SECRETS['DBUSER'],
         'PASSWORD': SECRETS['DBPASSWORD'],
-        # 'NAME': 'rbngdb',
-        # 'USER': 'rbngUser1',
-        # 'PASSWORD': 'GWhBYem$qL@9QP$8',
         'HOST': '127.0.0.1',
         'PORT': '5432',
 
