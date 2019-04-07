@@ -12,7 +12,7 @@ class ToDo(models.Model):
     done = models.BooleanField(verbose_name=u"Done")
     done_at = models.DateTimeField(verbose_name=u"Done At", null=True, blank=True, auto_now=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return u"Todo note ID={}".format(self.pk)
 
     class Meta:
