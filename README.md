@@ -20,10 +20,12 @@ Please edit secrets-template.txt file to add secrets and rename it to "secrets.t
 Don't forget to change file permission to 400 for security reason. 
 
 Prepare RDBMS using postgresql
-- `# sudo -s`
-- `# su postgres`
-- `# createuser -DEPRS toodoodbuser`
-- `# createdb -O toodoodbuser toodoo`
+- `# sudo -s` # gain super user priviliges
+- `$ su postgres`  # replace to postgresql user
+- `$ createuser -DEPRS toodoodbuser`
+- `$ createdb -O toodoodbuser toodoo`
+- `$ exit`
+- `# exit` # return to standard linux user
 
 Clone Project and prepare environment
 - `# git clone https://github.com/RecNes/toodoo.git`
