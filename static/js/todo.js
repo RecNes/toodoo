@@ -80,7 +80,7 @@ $('#submitButton').click(function () {
 
 function add_success() {
     getTodos();
-    alert("Todo Added Successfully");
+    // alert("Todo Added Successfully");
 }
 
 function add_error() {
@@ -110,7 +110,7 @@ function doneTodo(pk) {
 
 function done_success() {
     getTodos();
-    alert("Todo Done");
+    // alert("Todo Done");
 }
 
 function done_error() {
@@ -141,7 +141,7 @@ function deleteTodo(pk) {
 
 function delete_success() {
     getTodos();
-    alert("Todo Deleted");
+    // alert("Todo Deleted");
 }
 
 function delete_error() {
