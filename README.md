@@ -24,8 +24,8 @@ Prepare RDBMS using postgresql
 - `$ su postgres`  # replace to postgresql user
 - `$ createuser -DEPRS toodoodbuser`
 - `$ createdb -O toodoodbuser toodoo`
-- `$ exit`
-- `# exit` # return to standard linux user
+- `$ exit`  # return to super user
+- `# exit`  # return to standard linux user
 
 Clone Project and prepare environment
 - `# git clone https://github.com/RecNes/toodoo.git`
